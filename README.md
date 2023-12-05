@@ -27,6 +27,6 @@ Here are some examples of how to use the command interpreter:
 
 ## Authors
 The following individuals have contributed to the <link>AirBnB_clone</link> project:
-- <link>John Doe</link>
-- <link>Jane Smith</link>
+- <link>Samuel Karmole</link>
+- <link>Ruhinda Roderick</link>
 - ... (add other contributors as applicable)
