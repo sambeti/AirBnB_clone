@@ -8,8 +8,8 @@ To start the command interpreter, following these steps:
 ## How to Use it
 Once the command interpreter, you can use the following command
 to interact with the `AirBnB`- like database:
-*create: Create a new instance of class.
-*show: show the details of a specipic instancs.
+* create: Create a new instance of class.
+* show: show the details of a specipic instancs.
 * ..(add other commands as application)
 ## Authors
 The following individuals have contributed to the `AirBnB_clone` project:
