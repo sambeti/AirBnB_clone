@@ -1,76 +1,102 @@
-/* search bar */
-div.container {
-    max-width: 1000px;
-    margin: 30px auto;
-    /* text-align: center; */
-}
-section.filters {
-    background-color: white;
+.filters {
+    background-color: #FFFFFF;
     height: 70px;
     width: 100%;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-section.filters button {
+
+button {
+    font-size: 18px;
     background-color: #FF5A5F;
+    color: #FFFFFF;
     height: 48px;
     width: 20%;
-    border: 0;
     border-radius: 4px;
-    font-size: 18px;
-    color: #FFFFFF;
-    float: right;
-    margin: 11px 30px;
+    margin-right: 30px;
+    text-align: center;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
 }
-section.filters button:hover {
-    opacity: .9;
+
+button:hover {
+    opacity: 0.9;
+    filter: alpha(opacity=100);
 }
-/* location and amenities part of search bar */
-.locations,
+
+.locations {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid #DDDDDD;
+    margin-right: 0;
+    
+}
+
 .amenities {
     height: 100%;
     width: 25%;
-    float: left;
+    margin-right: auto;
 }
-.locations {
-    border-right: 1px solid #DDDDDD;
-}
-.locations h3,
-.amenities h3 {
+
+.title {
+    margin-bottom: 0;
+    margin-left: 15%;
+    text-align: left;
     font-weight: 600;
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    text-align: left;
-    margin-left: 30px;
 }
-.locations h4,
-.amenities h4 {
-    font-weight: 400;
+
+.subtitle {
+    margin-top: 0;
+    margin-left: 15%;
+    text-align: left;
     font-size: 14px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: left;
-    margin-left: 30px;
+    font-weight: 400;
 }
-/* display location and amenities options upon hover */
+
 .popover {
     display: none;
     background-color: #FAFAFA;
+    width: 90%;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    position: relative;
-    z-index: 1;
-}
-.popover h2 {
-    font-size: 16px;
-}
-li {
     list-style-type: none;
-    margin-top:10px;
-    margin-bottom: 10px;
+    padding-left: 10%;
 }
-.locations:hover .popover,
+
+.locations li {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.sublist {
+    list-style-type: none;
+    margin-bottom: 10%
+}
+
+.amenities ul {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.amenities li {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.locations:hover .popover {
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
 .amenities:hover .popover {
     display: block;
+    position: relative;
+    z-index: 100;
+}
+
+.popover h2 {
+    font-size: 16px;
 }
